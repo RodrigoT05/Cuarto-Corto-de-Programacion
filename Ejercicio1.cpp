@@ -18,11 +18,8 @@ int main(void){
     palabra=clave;
     n=(palabra).length();
 
-    for(int i = 0; i < n; i++){
-
-    CMurci(clave, i);
-    
-    }
+    for(int i = 0; i < n; i++)
+        CMurci(clave, i);
 
     resultado=clave;
 
@@ -32,8 +29,8 @@ int main(void){
 
 char CMurci(char clave[], int i){
 
-    switch (clave[i])
-    {
+    switch (clave[i]){
+            
     case 'm':
         clave[i]='0'; return clave[i];
         break;
